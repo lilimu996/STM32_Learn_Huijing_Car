@@ -11,6 +11,12 @@
 #define LED_SET         GPIO_SetBits(LED_GPIO , LED_PIN)  //高电平
 #define LED_RESET       GPIO_ResetBits(LED_GPIO , LED_PIN) //低电平
 
+//user LED PB8 IO口设置
+#define LED8_PIN         GPIO_Pin_8
+#define LED_GPIO         GPIOB
+#define LED8_SET         GPIO_SetBits(LED_GPIO , LED8_PIN)  //高电平
+#define LED8_RESET       GPIO_ResetBits(LED_GPIO , LED8_PIN) //低电平
+
 
 
 

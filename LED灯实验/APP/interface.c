@@ -1,6 +1,6 @@
 #include "interface.h"
 
-void UserLEDInit(void) //点亮PB0 LED灯函数
+void UserLEDInit(void) //点亮PB0 LED灯函数 点亮PB8 LED灯
 {
   GPIO_InitTypeDef  GPIO_InitStructure; //定义结构体变量
 	
@@ -10,6 +10,14 @@ void UserLEDInit(void) //点亮PB0 LED灯函数
 	GPIO_Init(LED_GPIO , &GPIO_InitStructure); //初始化GPIO
 	
 	LED_SET;	//高电平 熄灭火LED灯
+    
+    GPIO_InitStructure.GPIO_Pin = LED8_PIN; //选择你要设置的IO口
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;  //设置推挽输出模式
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;//配置GPIO端口速度
+	GPIO_Init(LED_GPIO , &GPIO_InitStructure); //初始化GPIO
+    LED8_SET;	//高电平 熄灭火LED8灯
+    
+    
 }
 
 //使能所有GPIO时钟
@@ -23,37 +31,6 @@ void GPIOCLKInit(void)
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOF , ENABLE);
 	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOG , ENABLE);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 void delay_init(void)
