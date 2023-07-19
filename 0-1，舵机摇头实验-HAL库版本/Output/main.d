@@ -62,3 +62,4 @@
 ..\..\output\main.o: D:\origin\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\main.o: ..\..\Drivers\./SYSTEM/delay/delay.h
 ..\..\output\main.o: ..\..\Drivers\./BSP/LED/led.h
+..\..\output\main.o: ..\..\Drivers\./BSP/TIMER/btim.h

@@ -21,7 +21,7 @@
 #include "./SYSTEM/usart/usart.h"
 #include "./SYSTEM/delay/delay.h"
 #include "./BSP/LED/led.h"
-
+#include "./BSP/TIMER/btim.h"
 
 int main(void)
 {
@@ -29,16 +29,12 @@ int main(void)
     sys_stm32_clock_init(RCC_PLL_MUL9); /* 设置时钟, 72Mhz */
     delay_init(72);                     /* 延时初始化 */
     led_init();                         /* LED初始化 */
+    btim_timx_int_init(5000-1,7200-1);  /*基本定时器初始化*/
     
     while(1)
     { 
+        delay_ms(20);
         
-        delay_ms(500);
-        LED0(0);                    /*点亮LED0*/
-        LED1(1);
-        delay_ms(500);
-        LED0(1);
-        LED1(0);
         
     }
 }
