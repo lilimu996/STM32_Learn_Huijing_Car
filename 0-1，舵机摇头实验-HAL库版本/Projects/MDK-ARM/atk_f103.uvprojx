@@ -526,6 +526,16 @@
               <FileType>5</FileType>
               <FilePath>..\..\Drivers\BSP\TIMER\btim.h</FilePath>
             </File>
+            <File>
+              <FileName>gtim.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Drivers\BSP\TIMER\gtim.c</FilePath>
+            </File>
+            <File>
+              <FileName>gtim.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\Drivers\BSP\TIMER\gtim.h</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

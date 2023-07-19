@@ -63,3 +63,4 @@
 ..\..\output\main.o: ..\..\Drivers\./SYSTEM/delay/delay.h
 ..\..\output\main.o: ..\..\Drivers\./BSP/LED/led.h
 ..\..\output\main.o: ..\..\Drivers\./BSP/TIMER/btim.h
+..\..\output\main.o: ..\..\Drivers\./BSP/TIMER/gtim.h
