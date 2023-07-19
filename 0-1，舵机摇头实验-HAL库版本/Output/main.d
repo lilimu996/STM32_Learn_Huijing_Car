@@ -61,6 +61,5 @@
 ..\..\output\main.o: ..\..\Drivers\./SYSTEM/usart/usart.h
 ..\..\output\main.o: D:\origin\MDK5.36\ARM\ARMCC\Bin\..\include\stdio.h
 ..\..\output\main.o: ..\..\Drivers\./SYSTEM/delay/delay.h
+..\..\output\main.o: ..\..\Drivers\./BSP/SERVOS/servos.h
 ..\..\output\main.o: ..\..\Drivers\./BSP/LED/led.h
-..\..\output\main.o: ..\..\Drivers\./BSP/TIMER/btim.h
-..\..\output\main.o: ..\..\Drivers\./BSP/TIMER/gtim.h

@@ -21,25 +21,25 @@ void gtim_timx_pwm_chy_init(uint16_t arr, uint16_t psc)
     HAL_TIM_PWM_Start(&g_timx_pwm_chy_handle, TIM_CHANNEL_3);
 }
 
-/* 定时器输出PWM MSP初始化函数 */
-void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim)
-{
-    if(htim->Instance == TIM3)
-    {
-        GPIO_InitTypeDef gpio_init_struct;
-        __HAL_RCC_GPIOB_CLK_ENABLE();
-        __HAL_RCC_TIM3_CLK_ENABLE();
+///* 定时器输出PWM MSP初始化函数 */
+//void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef *htim)
+//{
+//    if(htim->Instance == TIM3)
+//    {
+//        GPIO_InitTypeDef gpio_init_struct;
+//        __HAL_RCC_GPIOB_CLK_ENABLE();
+//        __HAL_RCC_TIM3_CLK_ENABLE();
 
-        gpio_init_struct.Pin = GPIO_PIN_0;
-        gpio_init_struct.Mode = GPIO_MODE_AF_PP;            /* 推挽复用 */
-        gpio_init_struct.Pull = GPIO_PULLUP;                /* 上拉 */
-        gpio_init_struct.Speed = GPIO_SPEED_FREQ_HIGH;      /* 高速 */
-        HAL_GPIO_Init(GPIOB, &gpio_init_struct);
-        
-        __HAL_RCC_AFIO_CLK_ENABLE();
-       
-    }
-}
+//        gpio_init_struct.Pin = GPIO_PIN_0;
+//        gpio_init_struct.Mode = GPIO_MODE_AF_PP;            /* 推挽复用 */
+//        gpio_init_struct.Pull = GPIO_PULLUP;                /* 上拉 */
+//        gpio_init_struct.Speed = GPIO_SPEED_FREQ_HIGH;      /* 高速 */
+//        HAL_GPIO_Init(GPIOB, &gpio_init_struct);
+//        
+//        __HAL_RCC_AFIO_CLK_ENABLE();
+//       
+//    }
+//}
 
 
 
