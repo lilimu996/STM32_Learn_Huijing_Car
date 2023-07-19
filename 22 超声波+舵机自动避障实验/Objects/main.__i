@@ -1,0 +1,7 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I.\Libraries\CMSIS -I.\Libraries\STM32F10x_StdPeriph_Driver\inc -I.\APP -I.\User -I.\Libraries\STM32F10x_StdPeriph_Driver\src
+-I "F:\11-1、STM32-4WD-智能小车2022版\11-1 STM32F103ZET6单片机智能小车教学视频 70课 2022高清版\5 实验源码\1 STM32智能小车实验源码\22 超声波+舵机自动避障实验\RTE"
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0
+-I C:\Keil_v5\ARM\CMSIS\Include
+-I C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+-DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD
+-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d "User\main.c"

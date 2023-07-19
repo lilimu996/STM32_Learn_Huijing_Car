@@ -1,0 +1,16 @@
+.\objects\lcd12864.o: APP\LCD12864.c
+.\objects\lcd12864.o: APP\LCD12864.h
+.\objects\lcd12864.o: .\User\stm32f10x.h
+.\objects\lcd12864.o: .\Libraries\CMSIS\core_cm3.h
+.\objects\lcd12864.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd12864.o: .\Libraries\CMSIS\system_stm32f10x.h
+.\objects\lcd12864.o: .\User\stm32f10x_conf.h
+.\objects\lcd12864.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_dma.h
+.\objects\lcd12864.o: .\User\stm32f10x.h
+.\objects\lcd12864.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_exti.h
+.\objects\lcd12864.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_flash.h
+.\objects\lcd12864.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_gpio.h
+.\objects\lcd12864.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_rcc.h
+.\objects\lcd12864.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h
+.\objects\lcd12864.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h
+.\objects\lcd12864.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h

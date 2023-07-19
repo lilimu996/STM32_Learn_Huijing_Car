@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections --signed_chars -I .\Libraries\CMSIS -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\APP -I .\User -I .\Libraries\STM32F10x_StdPeriph_Driver\src
+-I"E:\11-1 STM32单片机智能小车教学视频\5 实验源码\1 STM32智能小车实验源码\22 超声波+舵机自动避障实验\RTE"
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+-IC:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="521" -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD
+-o .\objects\lcd12864.o --omf_browse .\objects\lcd12864.crf --depend .\objects\lcd12864.d "APP\LCD12864.c"

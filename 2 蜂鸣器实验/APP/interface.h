@@ -18,7 +18,7 @@
 #define LED8_RESET       GPIO_ResetBits(LED_GPIO , LED8_PIN) //低电平
 
 
-//user FM PB2 IO口设置
+//user FM PE14 IO口设置
 #define FM_PIN         GPIO_Pin_14
 #define FM_GPIO        GPIOE
 #define FM_SET         GPIO_SetBits(FM_GPIO , FM_PIN)  //高电平
